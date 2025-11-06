@@ -1,0 +1,19 @@
+
+Call:
+lm(formula = price ~ as.numeric(format(date, "%Y")), data = sample_data2)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+ -424482  -110115   -41690    22272 97083528 
+
+Coefficients:
+                                 Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                    -2.449e+07  3.008e+05  -81.42   <2e-16 ***
+as.numeric(format(date, "%Y"))  1.231e+04  1.497e+02   82.19   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 735000 on 306299 degrees of freedom
+Multiple R-squared:  0.02158,	Adjusted R-squared:  0.02158 
+F-statistic:  6755 on 1 and 306299 DF,  p-value: < 2.2e-16
+
